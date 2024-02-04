@@ -1,11 +1,12 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 func repeat(w string, x int) {
-	for i := 0; i < x; i++ {
-		fmt.Println(w)
-	}
+	fmt.Println(strings.Repeat(w+"\n", x))
 }
 
 func main() {
